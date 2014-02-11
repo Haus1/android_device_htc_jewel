@@ -23,9 +23,13 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/jewel/overlay
 
 # Boot ramdisk setup
 PRODUCT_PACKAGES += \
-    fstab.qcom \
+    fstab-new.qcom \
+    fstab-old.qcom \
     init.target.rc \
-    remount.qcom
+    init.fstab.rc \
+    remount-new.qcom \
+    remount-old.qcom \
+    findcache
 
 # Sound configs
 PRODUCT_COPY_FILES += \
@@ -98,7 +102,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-PRODUCT_LOCALES += en_US
+PRODUCT_LOCALES := en_US
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/jewel/jewel-vendor.mk)

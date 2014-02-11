@@ -1,0 +1,70 @@
+# Kinda janky but should work until something better can be figured out
+
+on property:ro.bootloader=2.10.0000
+    symlink /fstab-new.qcom /fstab.qcom
+    symlink /remount-new.qcom /remount.qcom
+
+on property:ro.bootloader=2.10.2000
+    symlink /fstab-new.qcom /fstab.qcom
+    symlink /remount-new.qcom /remount.qcom
+
+on property:ro.bootloader=2.09.0000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=2.09.2000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=2.09.2222
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=2.09.4444
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=2.09.5555
+    symlink /fstab.qcom /fstab-old.qcom
+    symlink /remount.qcom /remount-old.qcom
+
+on property:ro.bootloader=1.19.0000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.19.2000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.19.2222
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.18.0000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.18.2000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.15.0000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.15.2000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.15.2222
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.12.0000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
+on property:ro.bootloader=1.12.2000
+    symlink /fstab-old.qcom /fstab.qcom
+    symlink /remount-old.qcom /remount.qcom
+
